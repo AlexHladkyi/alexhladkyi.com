@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>ua</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.261068933%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#2B5690" offset="0%"></stop>
+            <stop stop-color="#4779BB" offset="35.8530405%"></stop>
+            <stop stop-color="#5789CC" offset="59.4805743%"></stop>
+            <stop stop-color="#386AAD" offset="82.5432855%"></stop>
+            <stop stop-color="#4171B0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#C3AF12" offset="0%"></stop>
+            <stop stop-color="#E8D128" offset="25.5569046%"></stop>
+            <stop stop-color="#F5DE37" offset="56.2473606%"></stop>
+            <stop stop-color="#DBC51C" offset="79.5133024%"></stop>
+            <stop stop-color="#C9B525" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ua" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 2.000000)">
+            <path d="M0.624183869,0.683648544 C2.4808263,1.1596916 4.60609834,1.09847542 7,0.5 C9.50748695,-0.126871738 11.7202478,-0.164291212 13.6382825,0.387741578 C13.8524756,0.449378896 14,0.645351159 14,0.868236441 L14,6.5 L14,6.5 C12,5.83333333 9.66666667,5.83333333 7,6.5 C4.33333333,7.16666667 2,7.16666667 0,6.5 L0,1.16798507 C-3.50630318e-06,0.891840761 0.223855689,0.667981566 0.5,0.667981566 C0.541887455,0.667981566 0.583608905,0.673245125 0.624183869,0.683648544 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+            <path d="M0,5.5 C2,6.16666667 4.33333333,6.16666667 7,5.5 C9.66666667,4.83333333 12,4.83333333 14,5.5 L14,9.83201765 C14.0000009,10.1081605 13.7761429,10.3320185 13.5,10.3320185 C13.4581128,10.3320185 13.4163915,10.326755 13.3758168,10.3163516 C11.5191742,9.84030839 9.39390193,9.90152452 7,10.5 C4.49251305,11.1268717 2.27975223,11.1642912 0.361717539,10.6122584 C0.147524425,10.5506211 2.72955747e-17,10.3546488 0,10.1317636 L0,5.5 L0,5.5 Z" id="Rectangle-Copy" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>
