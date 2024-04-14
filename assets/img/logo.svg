@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 16L32 1L58 16V49L32 64L6 49V16Z" fill="white"/>
+<path d="M8 17L32 31L56 17V47L32 61L8 47V17Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 31L8 17V48L32 62L56 48V17L32 31ZM52 23.9641L32 35.6308L12 23.9641V44.7025L32 56.3692L52 44.7025V23.9641Z" fill="black"/>
+<path d="M8 17L32 3L56 17L32 31L8 17Z" fill="black"/>
+<path d="M18 44L23 47V52L18 49V44Z" fill="black"/>
+<path d="M41 44.5L46 41.5V49.5L41 52.5V44.5Z" fill="black"/>
+<path d="M30 33H34V58H30V33Z" fill="black"/>
+<path d="M41 29.5L46 26.5V34.5L41 37.5V29.5Z" fill="black"/>
+<path d="M18 32L23 35V41L18 38V32Z" fill="black"/>
+<path d="M9.5 18L32 30L54.5 18L32 31L9.5 18Z" fill="white"/>
+<path d="M32 5L34 15L51 17L34 19L32 28L30 19L13 17L30 15L32 5Z" fill="#E51578"/>
+</svg>
