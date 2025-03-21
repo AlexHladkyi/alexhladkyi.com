@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://alexhladkyi.com/projects/techapalooza.html</loc>
+        <loc>https://alexhladkyi.com/projects/app-icon-collection.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/appsuite-ccp-7.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/attorneys-on-demand.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/fannex.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/project-page-components.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/spiral.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/techapalooza-fest.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/winnipeg-smart-city.html</loc>
+    </url>
+    <url>
+        <loc>https://alexhladkyi.com/projects/zyda.html</loc>
     </url>
     <url>
         <loc>https://alexhladkyi.com/404.html</loc>
     </url>
     <url>
         <loc>https://alexhladkyi.com/</loc>
-    </url>
-    <url>
-        <loc>https://alexhladkyi.com/project-template-page.html</loc>
     </url>
 </urlset>
