@@ -252,7 +252,6 @@ img.flag {
 /* project page */
 
 .related-projects {
-  display: inline-block;
   margin-bottom: 16px;
   margin-right: 12px;
 }
@@ -291,6 +290,11 @@ img.flag {
 .fannex {
   color: #fff;
   background-color: #014a97;
+}
+
+.appsuite-wa {
+  color: #fff;
+  background-color: #344456;
 }
 
 @media (min-width: 767px) {
