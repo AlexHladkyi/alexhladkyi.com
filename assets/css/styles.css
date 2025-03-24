@@ -247,6 +247,7 @@ img.flag {
 
 .locked > .shadow-fix {
   box-shadow: none;
+  filter: contrast(0.5);
 }
 
 /* project page */
