@@ -200,6 +200,7 @@ img.flag {
 
 .project-thumbnail > img {
   max-width: 100%;
+  aspect-ratio: 16/9;
   /*height: auto;*/
   margin-bottom: .5rem;
   box-shadow: 0 1px 4px -1px rgba(22,22,29,0.1);
@@ -239,7 +240,7 @@ img.flag {
 
 .locked > img {
   max-width: 100%;
-  height: auto;
+  aspect-ratio: 16/9;
   margin-bottom: .5rem;
   box-shadow: 0 1px 4px -1px rgba(22,22,29,0.1);
   filter: saturate(0.2) contrast(0.2) brightness(1.6);
