@@ -4,6 +4,7 @@ html {
   font-size: 14px;
   padding-top: 32px;
   padding-bottom: 80px;
+  /*background-color: #ededed;*/
 }
 
 @media (max-width: 767px) {
