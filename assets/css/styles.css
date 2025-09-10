@@ -196,25 +196,25 @@ img.flag {
   gap: 40px 24px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .projects-grid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .projects-grid > *:nth-child(1), .projects-grid > *:nth-child(2) {
     grid-column: span 6;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .projects-grid > *:nth-child(n + 3) {
     grid-column: span 4;
   }
