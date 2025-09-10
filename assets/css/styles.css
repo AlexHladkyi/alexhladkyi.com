@@ -281,6 +281,27 @@ img.flag {
 
 .project-card:hover .project-card-info-icon {
   background: url("../../assets/img/icons/arrow-right-hover-alt.svg");
+  /*filter: hue-rotate(180deg);*/
+}
+
+.project-card-info-icon-zoom {
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/img/icons/icon-zoom-in.svg");
+}
+
+.project-card:hover .project-card-info-icon-zoom {
+  background: url("../../assets/img/icons/icon-zoom-in-hover.svg");
+  /*filter: hue-rotate(180deg);*/
+}
+
+.lightbox-proj {
+  cursor: zoom-in;
+  /*color: #16161d;*/
+}
+
+.lightbox-proj:hover {
+  /*color: #16161d;*/
 }
 
 .locked {
@@ -307,7 +328,8 @@ img.flag {
 }
 
 .archived {
-  color: #45454a;
+  color: #5b5b60;
+  cursor: default;
 }
 
 .archived > .project-card-img {
@@ -320,6 +342,41 @@ img.flag {
   outline: 1px solid rgba(0,0,0,0.1);
   outline-offset: -1px;
   filter: saturate(0);
+}
+
+/* lightbox */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+.lightbox-close {
+  display: block;
+  max-height: 24px;
+  margin: 8px;
+  align-items: end;
+}
+
+.lightbox-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: contain!important;
 }
 
 /* project page */
@@ -352,6 +409,13 @@ img.flag {
 .proj-txt-mrgn {
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+/* utility */
+
+.grid {
+  display: grid;
+  gap: 40px 24px;
 }
 
 /* project specific tweaks */
