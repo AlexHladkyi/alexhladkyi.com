@@ -160,6 +160,21 @@ p.intro {
   }
 }
 
+#greeting {
+  opacity: 0;
+  animation: fadeIn 1000ms 525ms forwards;
+  text-align: right;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* footer */
 
 .aside {
@@ -258,41 +273,51 @@ img.flag {
 
 .project-card-info {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   padding: 12px 8px 8px 8px;
+  gap: 4px;
+}
+
+.project-card-info-txt {
+  display: grid;
+  min-width: calc(100% - 28px);
+  gap: 2px;
 }
 
 .project-card-info h3 {
   margin: 0;
-  /*color: #16161d;*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-card-info h6 {
-  margin-bottom: 2px;
+  margin: 0;
   color: #8a8a8e;
 }
 
 .project-card-info-icon {
   width: 24px;
   height: 24px;
+  aspect-ratio: 1 / 1;
   background: url("../../assets/img/icons/arrow-right-idle.svg");
 }
 
 .project-card:hover .project-card-info-icon {
   background: url("../../assets/img/icons/arrow-right-hover-alt.svg");
-  /*filter: hue-rotate(180deg);*/
 }
 
 .project-card-info-icon-zoom {
   width: 24px;
   height: 24px;
+  aspect-ratio: 1 / 1;
   background: url("../../assets/img/icons/icon-zoom-in.svg");
 }
 
 .project-card:hover .project-card-info-icon-zoom {
   background: url("../../assets/img/icons/icon-zoom-in-hover.svg");
-  /*filter: hue-rotate(180deg);*/
 }
 
 .lightbox-proj {
@@ -324,6 +349,7 @@ img.flag {
 .project-card-icon-locked {
   width: 24px;
   height: 24px;
+  aspect-ratio: 1 / 1;
   background: url("../../assets/img/icons/locked-project.svg");
 }
 
