@@ -6,17 +6,17 @@
   var rndGreeting = greetings[Math.floor(Math.random() * greetings.length)];
   var container = document.getElementById('greeting');
 
-  var tempSpan = document.createElement('span');
-  tempSpan.style.visibility = 'hidden';
-  tempSpan.style.whiteSpace = 'pre';
-  tempSpan.style.font = window.getComputedStyle(container).font;
-  tempSpan.textContent = rndGreeting;
-  document.body.appendChild(tempSpan);
+  var tmpSpan = document.createElement('span');
+  tmpSpan.style.visibility = 'hidden';
+  tmpSpan.style.whiteSpace = 'pre';
+  tmpSpan.style.font = window.getComputedStyle(container).font;
+  tmpSpan.textContent = rndGreeting;
+  document.body.appendChild(tmpSpan);
 
   container.style.display = 'inline-block';
-  container.style.width = tempSpan.offsetWidth + 'px';
+  container.style.width = tmpSpan.offsetWidth + 'px';
   container.style.textAlign = 'left';
-  document.body.removeChild(tempSpan);
+  document.body.removeChild(tmpSpan);
 
   var index = 0;
 
