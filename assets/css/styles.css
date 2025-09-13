@@ -380,20 +380,36 @@ img.flag {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 24px;
+  padding: 16px;
   background: rgba(0, 0, 0, 0.8);
   cursor: zoom-out;
+  color: #fff;
+}
+
+.lightbox:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .lightbox:target {
   display: block;
 }
 
-.lightbox-close {
-  display: block;
-  max-height: 24px;
-  margin: 8px;
-  align-items: end;
+.lightbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+}
+
+.lightbox-header h3 {
+  margin: 0;
+}
+
+.lightbox-icon {
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/img/icons/icon-close-lightbox.svg");
 }
 
 .lightbox-img {
