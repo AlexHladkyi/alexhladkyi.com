@@ -336,21 +336,24 @@ img.flag {
 
 .locked > .project-card-img {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.7), 0 1px 4px -1px rgba(0,0,0,0.25);
-  filter: saturate(0.1) contrast(0.6) brightness(1.2);
+  filter: saturate(0.1) contrast(0.5) brightness(1.2);
 }
 
 .locked:hover > .project-card-img {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.7), 0 1px 4px -1px rgba(0,0,0,0.25);
   outline: 1px solid rgba(0,0,0,0.1);
   outline-offset: -1px;
-  filter: saturate(0.1) contrast(0.6) brightness(1.2);
+  filter: saturate(0.1) contrast(0.5) brightness(1.2);
 }
 
 .project-card-icon-locked {
   width: 24px;
   height: 24px;
+  position: relative;
+  left: 25%;
+  top: 23%;
   aspect-ratio: 1 / 1;
-  background: url("../../assets/img/icons/locked-project.svg");
+  background: url("../../assets/img/icons/locked-project-inv.svg");
 }
 
 .archived {
@@ -493,5 +496,31 @@ img.flag {
     flex-direction: column-reverse!important;
     align-items: center;
   }
+}
+
+.lock-icon-container-orb {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -24px;
+  margin-top: -24px;
+  border-radius: 999px;
+  background: url("../../assets/img/icons/locked-project-container-bg.svg");
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lock-icon-container {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -24px;
+  margin-top: -24px;
+  border-radius: 999px;
+  background: rgba(0,0,0,1);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 1);
 }
 
