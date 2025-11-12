@@ -357,7 +357,7 @@ img.flag {
 }
 
 .archived {
-  color: #5b5b60;
+  color: #8a8a8e;
   cursor: default;
 }
 
@@ -508,7 +508,8 @@ img.flag {
   margin-top: -24px;
   border-radius: 999px;
   background: url("../../assets/img/icons/locked-project-container-bg.svg");
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 1);
 }
 
 .lock-icon-container {
