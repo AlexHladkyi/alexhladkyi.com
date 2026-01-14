@@ -363,14 +363,14 @@ img.flag {
 
 .archived > .project-card-img {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.1), 0 1px 4px -1px rgba(0,0,0,0.25);
-  filter: saturate(0);
+  filter: saturate(0) contrast(0.5);
 }
 
 .archived:hover > .project-card-img {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.1), 0 1px 4px -1px rgba(0,0,0,0.25);
   outline: 1px solid rgba(0,0,0,0.1);
   outline-offset: -1px;
-  filter: saturate(0);
+  filter: saturate(0) contrast(0.5);
 }
 
 /* lightbox */
