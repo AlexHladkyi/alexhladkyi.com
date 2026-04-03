@@ -19,7 +19,101 @@ body {
   margin: auto;
 }
 
+ul {
+  list-style-type: "–";
+  padding-left: 1rem;
+}
+
+li {
+  padding-left: .6rem;
+}
+
 /* AH logo */
+
+.logo-block {
+  height: 120px;
+}
+
+.hitarea {
+  width: 120px;
+  height: 120px;
+  text-decoration: none;
+  border: none;
+}
+
+.cube-setup {
+  scale: 0.7;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg);
+}
+
+@media (max-width: 768px) {
+  .cube-setup {
+    scale: 1;
+  }
+}
+
+.setup-anim {
+  animation: cube-setup 1.25s cubic-bezier(0.7, 0, 0.3, 1) .5s forwards;
+}
+
+@keyframes cube-setup {
+  to {
+    transform: rotateX(-30deg) rotateY(-225deg);
+  }
+}
+
+.cube {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform .3s cubic-bezier(.3,1.5,.5,1);
+}
+
+a.hitarea:hover .cube {
+  transform: rotateY(180deg);
+}
+
+.faces {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url('../../assets/img/ah-logo-tilesheet.png');
+  background-size: 96px 64px;
+  /*image-rendering: pixelated;*/
+}
+
+.face-top {
+  transform: rotateX(90deg) translateZ(16px);
+  background-position: -64px 0px;
+}
+
+.face-side1 {
+  transform: translateZ(16px);
+  background-position: 0px 0px;
+}
+
+.face-side2 {
+  transform: rotateY(90deg) translateZ(16px);
+  background-position: -32px 0px;
+}
+
+.face-side3 {
+  transform: rotateY(180deg) translateZ(16px);
+  background-position: 0px -32px;
+}
+
+.face-side4 {
+  transform: rotateY(-90deg) translateZ(16px);
+  background-position: -32px -32px;
+}
+
+.face-bottom {
+  transform: rotateX(-90deg) translateZ(16px);
+  background-position: -64px -32px;
+}
 
 img.logo {
   width: 32px;
@@ -33,7 +127,7 @@ img.logo {
   }
 }
 
-img.logo:hover {
+a.logo:hover {
   mix-blend-mode: difference;
 }
 
@@ -103,6 +197,7 @@ h6 {
 p {
   font-size: 1rem;
   line-height: 150%;
+  text-wrap: pretty;
 }
 
 p.intro {
