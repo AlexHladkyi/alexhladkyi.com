@@ -39,6 +39,7 @@ li {
   height: 120px;
   text-decoration: none;
   border: none;
+  will-change: transform, scale;
 }
 
 .cube-setup {
