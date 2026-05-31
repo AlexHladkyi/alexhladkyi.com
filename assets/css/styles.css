@@ -403,6 +403,9 @@ img.flag {
 .project-card-info h6 {
   margin: 0;
   color: #8a8a8e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-card-info-icon {
