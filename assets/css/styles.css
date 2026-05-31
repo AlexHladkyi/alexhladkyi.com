@@ -287,6 +287,12 @@ p.intro {
   margin-right: 6px;
 }
 
+@media (max-width: 767px) {
+  .footer-urls > a {
+    line-height: 300%;
+  }
+}
+
 img.pdficon {
   width: 16px;
   height: 16px;
