@@ -310,6 +310,26 @@
                 </a>
 
                 <div class="project-card archived">
+                    <div class="project-card-img" style="background: url(assets/img/project-thumbnails/doccloud-thmbn.webp);"></div>
+                    <div class="project-card-info">
+                        <div class="project-card-txt">
+                            <h6>Archived</h6>
+                            <h3>DocCloud</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card archived">
+                    <div class="project-card-img" style="background: url(assets/img/project-thumbnails/fitness-point-thmbn.webp);"></div>
+                    <div class="project-card-info">
+                        <div class="project-card-txt">
+                            <h6>Archived</h6>
+                            <h3>Fitness Point</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card archived">
                     <div class="project-card-img" style="background: url(assets/img/project-thumbnails/photo-editing-app-alt.jpg);"></div>
                     <div class="project-card-info">
                         <div class="project-card-txt">
@@ -328,12 +348,22 @@
                 </div>
 
                 <div class="project-card archived">
+                    <div class="project-card-img" style="background: url(assets/img/project-thumbnails/timhortons-thmbn.webp);"></div>
+                    <div class="project-card-txt">
+                        <h6>Archived</h6>
+                        <h3>Tim Hortons</h3>
+                    </div>
+                </div>
+
+
+                <div class="project-card archived">
                     <div class="project-card-img" style="background: url(assets/img/project-thumbnails/techapalooza-alt.jpg);"></div>
                     <div class="project-card-txt">
                         <h6>Archived</h6>
                         <h3>Techapalooza</h3>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -355,39 +385,39 @@
     </footer>
 
     <script>
-    (function greeting() {
-    var greetings = [
-        'Hi!', 'Привіт!', 'こんにちは！', 'Salut!', '¡Hola!', 'Hallo!', 'Hej!', 'Moi!', 'Hei!', 'Tere!', 'Sveiki!', 'Olá!', 'Ciao!', 'Labas!', 'Cześć!'
-    ];
+        (function greeting() {
+        var greetings = [
+            'Hi!', 'Привіт!', 'こんにちは！', 'Salut!', '¡Hola!', 'Hallo!', 'Hej!', 'Moi!', 'Hei!', 'Tere!', 'Sveiki!', 'Olá!', 'Ciao!', 'Labas!', 'Cześć!'
+        ];
 
-    var rndGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-    var container = document.getElementById('greeting');
+        var rndGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+        var container = document.getElementById('greeting');
 
-    var tmpSpan = document.createElement('span');
-    tmpSpan.style.visibility = 'hidden';
-    tmpSpan.style.whiteSpace = 'pre';
-    tmpSpan.style.font = window.getComputedStyle(container).font;
-    tmpSpan.textContent = rndGreeting;
-    document.body.appendChild(tmpSpan);
+        var tmpSpan = document.createElement('span');
+        tmpSpan.style.visibility = 'hidden';
+        tmpSpan.style.whiteSpace = 'pre';
+        tmpSpan.style.font = window.getComputedStyle(container).font;
+        tmpSpan.textContent = rndGreeting;
+        document.body.appendChild(tmpSpan);
 
-    container.style.display = 'inline-block';
-    container.style.width = tmpSpan.offsetWidth + 'px';
-    container.style.textAlign = 'left';
-    document.body.removeChild(tmpSpan);
+        container.style.display = 'inline-block';
+        container.style.width = tmpSpan.offsetWidth + 'px';
+        container.style.textAlign = 'left';
+        document.body.removeChild(tmpSpan);
 
-    var index = 0;
+        var index = 0;
 
-    function typeLetter() {
-        container.textContent = rndGreeting.slice(0, index + 1);
-        index++;
-        if (index < rndGreeting.length) {
-        setTimeout(typeLetter, 100);
+        function typeLetter() {
+            container.textContent = rndGreeting.slice(0, index + 1);
+            index++;
+            if (index < rndGreeting.length) {
+            setTimeout(typeLetter, 100);
+            }
         }
-    }
 
-    setTimeout(typeLetter, 500);
-        
-    })();
+        setTimeout(typeLetter, 500);
+            
+        })();
     </script>
 
 </body>
