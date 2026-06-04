@@ -1,2 +1,6 @@
 
 .DS_Store
+*.bkp
+tailwind.config.js
+package.json
+tailwind-input.css
