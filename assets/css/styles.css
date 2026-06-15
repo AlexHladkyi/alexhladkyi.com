@@ -253,7 +253,7 @@ p.intro {
 
 #greeting {
   opacity: 0;
-  animation: fadeIn 1000ms 525ms forwards;
+  animation: fadeIn 1000ms 500ms ease-out forwards, blurr 500ms 400ms ease-out forwards, moveUp 500ms 350ms ease-in-out forwards;
   text-align: right;
 }
 
@@ -263,6 +263,24 @@ p.intro {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes blurr {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
 
@@ -461,14 +479,14 @@ img.flag {
 
 .archived > .project-card-img {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.7), 0 1px 4px -1px rgba(0,0,0,0.25);
-  filter: saturate(0) contrast(0.5) brightness(1.2);
+  filter: saturate(0) contrast(0.75) brightness(1.1);
 }
 
 .archived:hover > .project-card-img {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.7), 0 1px 4px -1px rgba(0,0,0,0.25);
   outline: 1px solid rgba(0,0,0,0.1);
   outline-offset: -1px;
-  filter: saturate(0) contrast(0.5) brightness(1.2);
+  filter: saturate(0) contrast(0.75) brightness(1.1);
 }
 
 /* lightbox */
