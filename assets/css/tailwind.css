@@ -11,7 +11,6 @@
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-brain-grey-500: oklch(0.561 0.024 285.61);
   }
 }
 @layer base {
