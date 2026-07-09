@@ -41,6 +41,7 @@
     --leading-normal: 1.5;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
+    --aspect-video: 16 / 9;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-brain-grey-50: oklch(0.956 0.003 286.8);
@@ -299,6 +300,45 @@
   }
   .inline-flex {
     display: inline-flex;
+  }
+  .aspect-24\/20 {
+    aspect-ratio: 24/20;
+  }
+  .aspect-36\/18 {
+    aspect-ratio: 36/18;
+  }
+  .aspect-48\/27 {
+    aspect-ratio: 48/27;
+  }
+  .aspect-48\/32 {
+    aspect-ratio: 48/32;
+  }
+  .aspect-240\/125 {
+    aspect-ratio: 240/125;
+  }
+  .aspect-480\/236 {
+    aspect-ratio: 480/236;
+  }
+  .aspect-480\/272 {
+    aspect-ratio: 480/272;
+  }
+  .aspect-480\/284 {
+    aspect-ratio: 480/284;
+  }
+  .aspect-480\/336 {
+    aspect-ratio: 480/336;
+  }
+  .aspect-480\/405 {
+    aspect-ratio: 480/405;
+  }
+  .aspect-480\/584 {
+    aspect-ratio: 480/584;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
   }
   .size-16 {
     width: calc(var(--spacing) * 16);
