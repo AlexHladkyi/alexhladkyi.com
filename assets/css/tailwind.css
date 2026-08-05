@@ -725,12 +725,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .decoration-1 {
-    text-decoration-thickness: var(--text-decoration-thickness-1);
-  }
-  .underline-offset-4 {
-    text-underline-offset: 4px;
-  }
   .opacity-40 {
     opacity: 40%;
   }
@@ -757,12 +751,6 @@
   }
   .outline-brain-grey-200 {
     outline-color: var(--color-brain-grey-200);
-  }
-  .outline-white\/5 {
-    outline-color: color-mix(in srgb, #fff 5%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      outline-color: color-mix(in oklab, var(--color-white) 5%, transparent);
-    }
   }
   .backdrop-blur-xl {
     --tw-backdrop-blur: blur(var(--blur-xl));
@@ -822,15 +810,6 @@
     }
     .hover\:text-white:hover {
       color: var(--color-white);
-    }
-    .hover\:underline:hover {
-      text-decoration-line: underline;
-    }
-    :is(.\*\:hover\:text-orange-500 > *):hover {
-      color: var(--color-orange-500);
-    }
-    :is(.\*\:hover\:underline > *):hover {
-      text-decoration-line: underline;
     }
   }
   @media (width < 40rem) {
