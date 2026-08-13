@@ -63,7 +63,6 @@
     --color-brain-grey-500: oklch(0.561 0.024 285.61);
     --color-brain-grey-700: oklch(0.381 0.025 285.15);
     --color-brain-grey-900: oklch(0.203 0.014 285.12);
-    --text-decoration-thickness-1: 1.5px;
   }
 }
 @layer base {
