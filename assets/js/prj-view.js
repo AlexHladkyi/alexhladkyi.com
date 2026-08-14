@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function initProjectTracking() {
   const projectHeaders = Array.from(document.querySelectorAll('.prj-view'));
   if (!projectHeaders.length) return;
 
@@ -24,4 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   projectHeaders.forEach(header => observer.observe(header));
   console.log('observing elements:', projectHeaders.length);
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initProjectTracking);
+} else {
+  // DOM already parsed by the time this script ran — run immediately
+  initProjectTracking();
+}
