@@ -4,21 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const observer = new IntersectionObserver((entries, observerInstance) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Grab ID from parent wrapper
+      console.log('callback fired', entry.target.id || entry.target, entry.isIntersecting, entry.intersectionRatio);
+
+      if (entry.intersectionRatio >= 0.5) {
         const parentSection = entry.target.closest('.prj-id');
         const uniqueProjectId = parentSection ? parentSection.id : 'no-project-id';
 
         if (window.umami && typeof window.umami.track === 'function') {
-          umami.track('project_view', { project_id: uniqueProjectId });
+          umami.track(uniqueProjectId);
         }
 
         observerInstance.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.5 // Trigger when 50% of the header block is in view
+    threshold: Array.from({ length: 21 }, (_, i) => i / 20),
+    rootMargin: '-10% 0px -10% 0px'
   });
 
   projectHeaders.forEach(header => observer.observe(header));
+  console.log('observing elements:', projectHeaders.length);
 });
