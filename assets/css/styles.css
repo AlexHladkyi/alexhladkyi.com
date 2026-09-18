@@ -38,29 +38,11 @@ body:has(.project-overlay:target) {
   text-underline-offset: 3px;
 }
 
-/*
-
-a {
-  color: #1e90ff;
-  text-decoration: underline;
-  text-decoration-thickness: 0.5px;
-  text-decoration-color: color-mix(in srgb, var(--color-brain-grey-900) 10%, transparent);
-  text-underline-offset: 5px;
-}
-
-a:hover {
-  color: #FF7810;
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-decoration-color: #ff7810;
-  text-underline-offset: 4px;
-}
-
-*/
-
-/* AH logo */
+/* AH Cube logo */
 
 .cube-prep {
+  text-decoration: none;
+  border: none;
   will-change: transform, scale;
 }
 
@@ -70,19 +52,29 @@ a:hover {
   transform: rotateX(-30deg) rotateY(-45deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .cube-setup {
     scale: 1;
   }
 }
 
 .setup-anim {
-  animation: cube-setup 1.25s cubic-bezier(0.7, 0, 0.3, 1) .5s forwards;
+  animation: cube-setup 3s cubic-bezier(0.7, 0, 0.3, 1) .5s forwards;
 }
 
 @keyframes cube-setup {
-  to {
+  47% {
     transform: rotateX(-30deg) rotateY(-225deg);
+  }
+  53% {
+    transform: rotateX(-30deg) rotateY(-225deg);
+  }
+  99.9%
+  {
+    transform: rotateX(-30deg) rotateY(-404deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(-405deg);
   }
 }
 
@@ -95,11 +87,15 @@ a:hover {
   transition: transform .3s cubic-bezier(.3,1.5,.5,1);
 }
 
+a.cube-prep:hover .cube {
+  transform: rotateY(180deg);
+}
+
 .faces {
   position: absolute;
   width: 32px;
   height: 32px;
-  background-image: url('../../assets/img/ah-logo-tilesheet.png');
+  background-image: url('/assets/img/ah-logo-tilesheet.png');
   background-size: 96px 64px;
   /*image-rendering: pixelated;*/
 }
@@ -183,7 +179,7 @@ img.logo {
 
 /* footer */
 
-.footer-urls > a {
+/*.footer-urls > a {
   margin-left: 6px;
   margin-right: 6px;
 }
@@ -192,7 +188,7 @@ img.logo {
   .footer-urls > a {
     line-height: 300%;
   }
-}
+}*/
 
 img.pdficon {
   width: 16px;
@@ -210,4 +206,9 @@ img.flag {
   margin-right: 3px;
   position: relative;
   bottom: 0.5px;
+}
+
+.tab-link.is-active {
+  border-color: var(--color-brain-grey-400);
+  color: var(--color-brain-grey-900);
 }

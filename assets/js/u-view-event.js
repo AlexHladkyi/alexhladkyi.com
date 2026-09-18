@@ -1,11 +1,11 @@
 function initProjectTracking() {
-  const projectHeaders = Array.from(document.querySelectorAll('.prj-view'));
+  const projectHeaders = Array.from(document.querySelectorAll('.show-view'));
   if (!projectHeaders.length) return;
 
   const observer = new IntersectionObserver((entries, observerInstance) => {
     entries.forEach(entry => {
       if (entry.intersectionRatio >= 0.5) {
-        const parentSection = entry.target.closest('.prj-id');
+        const parentSection = entry.target.closest('.pass-id');
         const uniqueProjectId = parentSection ? parentSection.id : 'no-project-id';
 
         if (window.umami && typeof window.umami.track === 'function') {
