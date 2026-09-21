@@ -46,6 +46,20 @@ body:has(.project-overlay:target) {
   will-change: transform, scale;
 }
 
+.cube-reset {
+  opacity: 0;
+  animation: cubeReset 300ms 150ms ease-out forwards;
+}
+
+@keyframes cubeReset {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .cube-setup {
   scale: 0.7;
   transform-style: preserve-3d;
