@@ -219,6 +219,9 @@
   .pointer-events-none {
     pointer-events: none;
   }
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -395,6 +398,9 @@
   .max-h-screen {
     max-height: 100vh;
   }
+  .w-3xl {
+    width: var(--container-3xl);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -455,11 +461,17 @@
   .list-\[\'–\'\] {
     list-style-type: '–';
   }
+  .grid-flow-col {
+    grid-auto-flow: column;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-rows-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -626,6 +638,9 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
@@ -790,6 +805,10 @@
   }
   .italic {
     font-style: italic;
+  }
+  .tabular-nums {
+    --tw-numeric-spacing: tabular-nums;
+    font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
   }
   .opacity-30 {
     opacity: 30%;
@@ -1008,6 +1027,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:hidden {
+      display: none;
+    }
     .md\:size-9 {
       width: calc(var(--spacing) * 9);
       height: calc(var(--spacing) * 9);
@@ -1015,6 +1037,9 @@
     .md\:size-11 {
       width: calc(var(--spacing) * 11);
       height: calc(var(--spacing) * 11);
+    }
+    .md\:w-4xl {
+      width: var(--container-4xl);
     }
     .md\:max-w-md {
       max-width: var(--container-md);
@@ -1162,6 +1187,26 @@
   inherits: false;
 }
 @property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
   syntax: "*";
   inherits: false;
 }
@@ -1366,6 +1411,11 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;

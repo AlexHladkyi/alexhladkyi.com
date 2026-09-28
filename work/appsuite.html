@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/homescreen-ios.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/homescreen-android.png">
     <script src="/assets/js/url-cleanup.js" async></script>
+    <script src="/assets/js/ah-time.js" async></script>
     <!-- 👁️ 👁️ -->
     <script src="/assets/js/u-view-event.js" async></script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="d03c9f7f-0ae9-4567-994f-d8f77dba2413" data-performance="true"></script>
@@ -185,11 +186,12 @@
         </a>
     </div>
 
-    <footer class="pt-12 pb-16 w-full sm:px-3">
+    <footer id="footer" class="pass-id pt-12 pb-16 w-full sm:px-3">
         <div class="mb-12">
             <p class="font-semibold">Alex Hladkyi</p>
             <p class="mb-5 opacity-50">Product Designer / UX + UI + Interaction</p>
-            <p class="mb-5"><span class="opacity-50">Based in Lviv, Ukraine</span><img class="inline flag" src="/assets/icons/icon-ua.svg"></p>
+            <p><span class="opacity-50">Based in Lviv, Ukraine</span><img class="inline flag" src="/assets/icons/icon-ua.svg"></p>
+            <p id="ah-time" class="mb-5 opacity-50"></p>
             <div class="mb-5"><a class="alink" href="mailto:mail@alexhladkyi.com">mail@alexhladkyi.com</a></div>
             <div class="flex flex-wrap gap-3 mb-5">
                 <a class="alink" href="https://calendar.app.google/w6tBpT1NmtdoLP268">Book&nbsp;a&nbsp;call</a>

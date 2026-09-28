@@ -1,17 +1,12 @@
-const DEBUG = false; // set to true to enable console logging
-
 function initProjectTracking() {
-  const projectHeaders = Array.from(document.querySelectorAll('.pass-id'));
+  const projectHeaders = Array.from(document.querySelectorAll('.show-view'));
   if (!projectHeaders.length) return;
 
   const observer = new IntersectionObserver((entries, observerInstance) => {
     entries.forEach(entry => {
       if (entry.intersectionRatio >= 0.5) {
-        const uniqueProjectId = entry.target.id || 'no-project-id';
-
-        if (DEBUG) {
-          console.log(uniqueProjectId);
-        }
+        const parentSection = entry.target.closest('.pass-id');
+        const uniqueProjectId = parentSection ? parentSection.id : 'no-project-id';
 
         if (window.umami && typeof window.umami.track === 'function') {
           umami.track(uniqueProjectId);
@@ -21,7 +16,7 @@ function initProjectTracking() {
       }
     });
   }, {
-    threshold: Array.from({ length: 21 }, (_, i) => i / 20),
+    threshold: Array.from({ length: 21 }, (_, i) => i / 20), // 0, 0.05, ..., 1.0
     rootMargin: '-10% 0px -10% 0px'
   });
 
