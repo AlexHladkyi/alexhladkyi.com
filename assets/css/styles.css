@@ -226,3 +226,12 @@ img.flag {
   border-color: var(--color-brain-grey-400);
   color: var(--color-brain-grey-900);
 }
+
+.btn-text-trim {
+  text-box: trim-both cap alphabetic;
+}
+
+.text-helper {
+  border-top: 1px solid magenta;
+  border-bottom: 1px solid magenta;
+}

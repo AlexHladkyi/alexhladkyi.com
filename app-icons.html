@@ -34,10 +34,9 @@
 
     <!-- The Cube -->
 
-    <header class="py-6 px-2 sm:px-3">
-        <a href="/">
-        <div class="flex cube-prep">
-            <div class="cube-setup">
+    <header class="py-4 px-2 sm:px-3 flex items-center">
+        <a href="/" class="flex cube-prep cube-reset size-16 -ml-4">
+            <div class="cube-setup m-auto">
                 <div class="cube">
                     <div class="faces face-top"></div>
                     <div class="faces face-side1"></div>
@@ -47,7 +46,6 @@
                     <div class="faces face-bottom"></div>
                 </div>
             </div>
-        </div>
         </a>
     </header>
 
@@ -61,20 +59,20 @@
                 <div class="flex items-center gap-2">
                     <a href="mailto:mail@alexhladkyi.com">
                         <div class="flex items-center rounded-lg gap-1 pt-2 pr-5 pb-2 pl-6 bg-brain-grey-900 hover:bg-orange-500 text-white font-medium text-lg">
-                            <p>Send email</p>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0, 1)"><path d="M16.5 16.5V7.5H7.5" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><path d="M7.5 16.5L15.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></g></svg>
+                            <p class="btn-text-trim my-auto">Send email</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0, 0)"><path d="M16.5 16.5V7.5H7.5" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><path d="M7.5 16.5L15.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></g></svg>
                         </div>
                     </a>
                     <a class="h-11 max-sm:w-12 flex items-center justify-items-center rounded-lg bg-brain-grey-100 hover:bg-green-600 text-shadow-brain-grey-900 hover:text-white  font-medium text-lg" href="https://wa.me/message/VFDWAVS2SCIDJ1">
                         <div class="inline-flex m-auto items-center gap-2 sm:pl-5">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.149 2C14.7047 2.01525 17.1562 3.0175 18.9908 4.79688C20.8253 6.57631 21.9014 8.99572 21.9947 11.5498C22.0432 12.8574 21.8327 14.1621 21.3746 15.3877C20.9165 16.6131 20.2199 17.7355 19.3258 18.6904C18.4314 19.6455 17.3566 20.4146 16.1637 20.9522C14.9707 21.4897 13.6826 21.7859 12.3746 21.8232H12.0914C10.6045 21.8236 9.13595 21.4892 7.7955 20.8457L2.608 22H2.59335C2.58249 21.9999 2.57099 21.9977 2.56112 21.9932C2.55136 21.9886 2.5428 21.9818 2.53573 21.9736C2.52863 21.9655 2.52322 21.9557 2.5201 21.9453C2.51704 21.935 2.51576 21.9237 2.51717 21.9131L3.39413 16.668C2.56877 15.1578 2.15081 13.459 2.18124 11.7383C2.21173 10.0174 2.68946 8.33361 3.56796 6.85352C4.44639 5.37355 5.6951 4.14789 7.191 3.29688C8.68704 2.44588 10.379 1.99876 12.1002 2H12.149ZM8.55428 7.13281C8.46338 7.1437 8.37456 7.16865 8.29061 7.20606C8.17873 7.25595 8.07735 7.32747 7.99374 7.41699C7.75751 7.65925 7.09741 8.24251 7.05917 9.4668C7.02099 10.6905 7.87539 11.9014 7.99569 12.0723C8.11532 12.2421 9.63151 14.8874 12.1285 15.96C13.5961 16.5922 14.2397 16.7002 14.6568 16.7002C14.8286 16.7002 14.9587 16.6829 15.0943 16.6748C15.5519 16.6464 16.5839 16.1177 16.8092 15.543C17.0344 14.968 17.0492 14.4648 16.9898 14.3643C16.9305 14.2637 16.7673 14.1912 16.5221 14.0625C16.2761 13.9334 15.0734 13.2906 14.8473 13.2002C14.7636 13.1613 14.6736 13.1377 14.5816 13.1309C14.5216 13.134 14.4624 13.1518 14.4107 13.1826C14.3592 13.2134 14.316 13.2564 14.2848 13.3076C14.0838 13.5579 13.6222 14.1019 13.4674 14.2588C13.4336 14.2977 13.3919 14.3287 13.3453 14.3506C13.2986 14.3724 13.2475 14.3848 13.1959 14.3857C13.1009 14.3815 13.0077 14.3566 12.9234 14.3125C12.1946 14.003 11.5302 13.5589 10.9644 13.0049C10.4359 12.4839 9.98706 11.8878 9.63339 11.2354C9.49672 10.982 9.63372 10.851 9.75839 10.7324C9.88294 10.6138 10.0166 10.4503 10.1451 10.3086C10.2507 10.1875 10.339 10.0519 10.4068 9.90625C10.4418 9.83876 10.4588 9.76351 10.4576 9.6875C10.4564 9.6113 10.4363 9.5362 10.399 9.46973C10.3392 9.34129 9.89702 8.09811 9.68905 7.59864C9.52025 7.17157 9.31904 7.15662 9.14315 7.14356C8.99846 7.13351 8.83241 7.12905 8.66659 7.12403H8.6451L8.55428 7.13281Z" fill="currentColor"/></svg>
-                            <p class="max-sm:hidden mr-7">Whatsapp</p>
+                            <p class="max-sm:hidden mr-7 btn-text-trim my-auto">Whatsapp</p>
                         </div>
                     </a>
                     <a class="h-11 max-sm:w-12 flex items-center justify-items-center rounded-lg bg-brain-grey-100 hover:bg-sky-600 text-shadow-brain-grey-900 hover:text-white  font-medium text-lg" href="http://t.me/Balsalmo">
                         <div class="inline-flex m-auto items-center gap-2 sm:pl-5">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1.5C17.799 1.5 22.5 6.20101 22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5ZM16.541 6.91309C16.0903 6.9211 15.3999 7.16069 12.0742 8.53906C10.9108 9.02176 8.58397 10.0207 5.09375 11.5361C4.52706 11.7607 4.22937 11.9806 4.20312 12.1953C4.15075 12.6079 4.7479 12.7366 5.49609 12.9795C6.10754 13.1774 6.92996 13.4087 7.35645 13.418C7.74551 13.4263 8.1783 13.2675 8.65527 12.9404C11.9168 10.747 13.598 9.63744 13.7051 9.61328C13.7799 9.59651 13.883 9.57561 13.9521 9.6377C14.0232 9.6996 14.0153 9.81713 14.0078 9.84863C13.948 10.1018 10.8903 12.8738 10.7109 13.0596C10.0376 13.7568 9.27062 14.1838 10.4521 14.96C11.4752 15.6316 12.0702 16.0607 13.123 16.749C13.7964 17.1889 14.3247 17.7102 15.0205 17.6465C15.3402 17.617 15.6715 17.3176 15.8379 16.4238C16.2344 14.3105 17.0138 9.73153 17.1934 7.84473C17.2101 7.67954 17.1898 7.46785 17.1748 7.375C17.158 7.28216 17.1245 7.14959 17.0049 7.05176C16.861 6.93569 16.6402 6.91144 16.541 6.91309Z" fill="currentColor"/></svg>
-                            <p class="max-sm:hidden mr-7">Telegram</p>
+                            <p class="max-sm:hidden mr-7 btn-text-trim my-auto">Telegram</p>
                         </div>
                     </a>
                 </div>
@@ -151,7 +149,7 @@
             <!-- 🟢Spiral -->
 
             <div id="app-icon-spiral" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icon for Spiral</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A mobile productivity app for teams running events</p>                        
@@ -165,7 +163,7 @@
             <!-- 🟢Axenor -->
 
             <div id="app-icon-axenor" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icon for Axenor Driver</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A mobile app for safer truck driver habits</p>                        
@@ -179,7 +177,7 @@
             <!-- 🟢Lawlink -->
 
             <div id="app-icon-lawlink" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icon for LawLink</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A mobile platform connecting clients with legal professionals</p>                        
@@ -193,7 +191,7 @@
             <!-- 🟢Beaconator -->
 
             <div id="app-icon-beaconator" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icon for Beaconator+</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A mobile iOS app for tracking BT beacons</p>                        
@@ -207,7 +205,7 @@
             <!-- 🟢Swipify -->
 
             <div id="app-icon-swipify" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icon for Swipify</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A mobile iOS app for editing panoramic images</p>                        
@@ -221,7 +219,7 @@
             <!-- 🟢Tim Hortons -->
 
             <div id="app-icon-tim-hortons" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icon for Tim Hortons</h2>
                     </div>
@@ -234,7 +232,7 @@
             <!-- 🟢Techpalooza -->
 
             <div id="app-icon-techapalooza" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icons for Techapalooza</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A yearly charity music fest held in Winnipeg, Canada</p>                        
@@ -248,7 +246,7 @@
             <!-- 🟢PB -->
 
             <div id="app-icon-pb24" class="pass-id pb-24 sm:pb-40">
-                <div id="client" class="show-view flex items-center sm:items-start gap-4 pb-8 sm:px-2">
+                <div id="client" class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
                     <div id="name" class="flex-auto flex-col items-start my-auto">
                         <h2 class="font-bold text-2xl max-sm:tracking-snug">App icons for PrivatBank</h2>
                         <p class="text-brain-grey-500 leading-snug sm:leading-normal sm:text-lg">A mobile app client for the largest bank in Ukraine</p>                        
