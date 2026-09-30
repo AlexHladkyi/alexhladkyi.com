@@ -49,6 +49,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --blur-md: 12px;
     --blur-xl: 24px;
@@ -252,6 +253,9 @@
   .left-0 {
     left: 0px;
   }
+  .left-\[50\%\] {
+    left: 50%;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -392,6 +396,9 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-\[6px\] {
+    height: 6px;
+  }
   .h-lh {
     height: 1lh;
   }
@@ -406,6 +413,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-\[6px\] {
+    width: 6px;
   }
   .w-full {
     width: 100%;
@@ -546,6 +556,9 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-\[100px\] {
     border-radius: 100px;
   }
@@ -582,6 +595,9 @@
   }
   .bg-brain-grey-100 {
     background-color: var(--color-brain-grey-100);
+  }
+  .bg-brain-grey-500 {
+    background-color: var(--color-brain-grey-500);
   }
   .bg-brain-grey-900 {
     background-color: var(--color-brain-grey-900);
