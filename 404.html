@@ -35,7 +35,7 @@
     <!-- The Cube -->
 
     <header class="py-4 px-2 sm:px-3 flex items-center">
-        <a href="/" class="flex cube-prep cube-reset size-16 -ml-4">
+        <a href="/" class="flex cube-prep cube-reset size-16 -ml-4 rounded-lg hover:bg-brain-grey-100">
             <div class="cube-setup setup-anim m-auto">
                 <div class="cube">
                     <div class="faces face-top"></div>
@@ -54,12 +54,39 @@
         <section class="pt-16 pb-24 w-full sm:px-2">
             <div class="max-w-2xl">
                 <h1 class="text-4xl leading-snug md:leading-tight tracking-tight mb-12 font-extrabold">404.</h1>
-                <h2 class="text-lg leading-normal mb-24 text-pretty">Oops… The page you’re looking for is missing.</h2>
+                <p class="text-lg leading-normal mb-24 text-pretty">Oops… The page you’re looking for is missing.</p>
+
+                <!-- Project overview -->
+
+                <section class="pb-10 sm:pb-20">
+                    <h2 class="text-lg pb-4 italic text-brain-grey-500 leading-normal text-pretty">Looking for … ?</h2>
+                    <div class="relative">
+                        <div class="absolute left-0 top-0 bottom-0 w-4 bg-linear-to-r from-brain-grey-50 to-transparent pointer-events-none z-10 md:hidden"></div>
+                        <div class="overflow-x-auto pb-10">
+                            <ul class="w-xl md:w-2xl list-['–'] px-2 grid grid-flow-col grid-rows-7 gap-y-1.5 sm:gap-y-1">
+                                <li class="pl-3"><a class="alink" href="/work/axenor-driver.html">Axenor Driver</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/usc-spirit.html#station">USC Spirit Station</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/usc-spirit.html#owner">USC Spirit Owner</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/usc-spirit.html#driver">USC Spirit Driver</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/appsuite.html#ccp7">Appsuite Customer Care Portal 7</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/appsuite.html#wa21">Appsuite Web App 2.1</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/appsuite.html#pap">Appsuite Partner Portal</a></li>
+                                <li class="pl-3"><a class="alink" href="/work/lawlink.html">LawLink</a></li>
+                                <li class="pl-3"><a class="alink" href="/index.html#spiral">Spiral Task Manager</a></li>
+                                <li class="pl-3"><a class="alink" href="/index.html#aod">Attorneys on Demand</a></li>
+                                <li class="pl-3"><a class="alink" href="/index.html#fannex">Fannex</a></li>
+                                <li class="pl-3"><a class="alink" href="/index.html#zyda">Zyda Dashboard</a></li>
+                            </ul>
+                        </div>
+                        <div class="absolute right-0 top-0 bottom-0 w-10 bg-linear-to-l from-brain-grey-50 to-transparent pointer-events-none z-10 md:hidden"></div>
+                    </div>
+                </section>
+
                 <div class="flex items-center gap-2">
                     <a href="/">
                         <div class="inline-flex items-center rounded-lg gap-2 pt-2 pr-6 pb-2 pl-4 bg-brain-grey-100 hover:bg-orange-500 text-shadow-brain-grey-900 hover:text-white font-medium text-lg">
                             <svg class="rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0, -1)"><path d="M12 6L18 12L12 18" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><path d="M17 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></g></svg>
-                            <p>Back to homepage</p>
+                            <p>Homepage</p>
                         </div>
                     </a>
                 </div>

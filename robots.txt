@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: https://www.alexhladkyi.com/work/fh/
+
+User-agent: *
+Disallow: https://www.alexhladkyi.com/work/drafts/
+
+Sitemap: https://www.alexhladkyi.com/sitemap.xml
