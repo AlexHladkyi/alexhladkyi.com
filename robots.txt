@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: https://www.alexhladkyi.com/work/fh/
+Disallow: https://www.alexhladkyi.com/fh/
 
 User-agent: *
 Disallow: https://www.alexhladkyi.com/work/drafts/
