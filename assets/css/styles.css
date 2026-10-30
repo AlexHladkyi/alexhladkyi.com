@@ -1,5 +1,6 @@
 /* alexhladkyidotcom v3 */
 
+/*
 html {
   font-size: 14px;
 }
@@ -9,12 +10,12 @@ html {
     font-size: 16px;
   }
 }
+*/
 
 body {
   color: var(--color-brain-grey-900);
   max-width: 1200px;
   margin: auto;
-  text-wrap: pretty;
   font-family: var(--font-sans);
 }
 
@@ -30,12 +31,26 @@ body:has(.project-overlay:target) {
   text-underline-offset: 4px;
 }
 
-.alink:hover {
+.alink:hover, .group:hover .alink {
   color: var(--color-orange-500);
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-decoration-color: var(--color-orange-400);
-  text-underline-offset: 3px;
+  text-underline-offset: 3.5px;
+}
+
+.asubtlelink {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: var(--color-brain-grey-200);
+  text-underline-offset: 4.5px;
+}
+
+.asubtlelink:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-orange-400);
+  text-underline-offset: 4px;
 }
 
 /* AH Cube logo */
@@ -235,3 +250,4 @@ img.flag {
   border-top: 1px solid magenta;
   border-bottom: 1px solid magenta;
 }
+

@@ -32,12 +32,14 @@
     <script defer src="https://cloud.umami.is/script.js" data-website-id="d03c9f7f-0ae9-4567-994f-d8f77dba2413" data-performance="true"></script>
 </head>
 
-<body class="pt-24 pb-24 max-sm:px-4 px-8">
+<body class="pt-4 sm:pt-3">
 
-    <!-- The Cube & Client -->
+    <header class="px-4 sm:px-5 pb-16 sm:pb-24 flex items-center justify-between gap-2">
 
-    <header class="py-4 px-2 sm:px-3 flex items-center">
-        <a href="/" class="flex cube-prep size-16 -ml-4 rounded-lg hover:bg-brain-grey-100">
+        <!-- CubeAH -->
+
+        <a href="/" class="cube-prep cube-reset flex items-center gap-4 h-16 px-4 -ml-2 rounded-lg group">
+
             <div class="cube-setup setup-anim m-auto">
                 <div class="cube">
                     <div class="faces face-top"></div>
@@ -48,19 +50,23 @@
                     <div class="faces face-bottom"></div>
                 </div>
             </div>
+
+            <div class="alink text-xl md:text-base leading-none md:leading-tight tracking-tight font-medium shrink-0 pr-2">Alex Hladkyi</div>
+
         </a>
-        <div class="px-2 max-md:px-3 text-brain-grey-400 max-md:scale-100 scale-75">
-            <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.576 9.91201C11.008 10.024 11.872 9.99201 11.12 10.696C10.56 11.24 9.712 10.76 9.136 10.456C8.784 10.28 7.92 9.56001 7.616 9.59201C6.88 9.97601 6.144 10.376 5.376 10.728C4.304 11.192 2.768 11.096 2.432 10.968C1.84 10.76 1.248 10.536 0.976004 9.89601C0.112004 7.89601 2.432 6.02401 3.84 4.92001C3.456 4.02401 3.072 3.03201 3.344 2.04001C3.472 1.59201 3.904 0.808014 4.32 0.600014C4.528 0.504014 5.184 0.360014 5.408 0.376014C5.888 0.440014 6.272 0.808014 6.368 0.904014C7.696 1.99201 6.224 4.18401 5.232 5.03201C5.264 5.24001 5.456 5.35201 5.552 5.54401C5.648 5.72001 7.424 8.31201 7.84 8.24801C8.112 8.21601 9.136 7.24001 9.392 7.01601C9.728 6.71201 10.208 5.96001 10.64 5.96001C11.152 5.97601 11.2 6.58401 11.12 6.96801C11.072 7.24001 10.624 7.49601 10.352 7.70401C10.16 7.83201 8.304 8.68001 8.512 8.90401C9.04 9.36801 9.904 9.72001 10.576 9.91201ZM5.056 1.38401C3.952 1.49601 4.352 3.81601 4.592 4.37601C4.928 4.47201 5.776 3.35201 5.888 2.40801C5.888 1.88001 5.712 1.32001 5.056 1.38401ZM6.768 8.87201C6.048 8.12001 4.32 5.65601 4.32 5.65601C3.424 6.12001 1.088 8.48801 2.176 9.64001C2.528 10.008 4 10.232 5.12 9.68801C5.136 9.68801 5.136 9.68801 5.152 9.67201C5.712 9.51201 6.24 9.12801 6.768 8.87201Z" fill="currentColor"/></svg>
-        </div>
-        <div class="size-16 flex"><img src="/assets/img/prj/usc/usc-spirit-logo.webp" class="size-11 md:size-9 m-auto aspect-square"></div>
+
     </header>
 
-    <main class="pb-24 sm:pb-40">
+    <main class="px-4 sm:px-6 mb-24">
 
-        <div class="my-auto pt-16 pb-20 sm:px-2 gap-10">
-            <h1 class="text-4xl leading-snug md:leading-tight tracking-tight mb-6 font-extrabold">USC Spirit</h1>
+        <div class="pb-10 sm:pb-20">
+            <div class="flex flex-row items-center mb-6 gap-4">
+                <img src="/assets/img/prj/usc/usc-spirit-logo.webp" class="size-12 aspect-square">
+                <h1 class="text-4xl sm:text-6xl text-pretty font-semibold leading-snug tracking-tightish">USC Spirit</h1>
+            </div>
+            
             <div class="flex flex-row max-md:flex-col-reverse gap-16 max-md:gap-6">
-                <div class="max-w-3xl flex flex-col gap-6">
+                <div class="max-w-3xl flex flex-col gap-6 text-xl">
                     <p>First designer closely embedded with founders and eng team; owned end-to-end design of the software ecosystem surrounding the hardware for management, control, and automation for industrial weighbridges.</p>
                     <ul class="list-['–'] list-outside pl-3 max-w-3xl">
                         <li class="pl-3">Designed tablet/desktop application for controlling weighing hardware by weighbridge operators</li>
@@ -108,8 +114,8 @@
                 <img class="mb-20 max-sm:rounded-lg rounded-xl outline-1 outline-brain-grey-100 aspect-video" src="/assets/img/prj/usc/station/usc-spirit-station-000-cover.webp" alt="USC Spirit Station tablet app cover image">
 
                 <div class="pb-24 sm:px-2 flex flex-col md:flex-row md:gap-16 align-baseline">
-                    <h3 class="text-xl leading-snug md:leading-tight mb-2 font-semibold">Spirit Station</h3>
-                    <div class="pl-3 max-w-3xl">
+                    <h3 class="text-2xl leading-snug md:leading-tight mb-2 font-semibold">Spirit Station</h3>
+                    <div class="pl-3 max-w-3xl text-xl">
                         <p>Designed a tablet/desktop application for weighbridge operators that integrates real-time sensor data into a dynamic 3D interface. This visual telemetry paired with intelligent auto-suggestions was used for quicker data entry and accelerated vehicle throughput.</p>
                     </div>
                 </div>
@@ -179,8 +185,8 @@
                 <img class="mb-20 max-sm:rounded-lg rounded-xl outline-1 outline-brain-grey-100 aspect-video" src="/assets/img/prj/usc/owner/usc-spirit-owner-000-cover.webp" alt="USC Spirit Owner cover image">
 
                 <div class="pb-24 sm:px-2 flex flex-col md:flex-row md:gap-16 align-baseline">
-                    <h3 class="text-xl leading-snug md:leading-tight mb-2 font-semibold">Spirit Owner</h3>
-                    <div class="pl-3 max-w-3xl">
+                    <h3 class="text-2xl leading-snug md:leading-tight mb-2 font-semibold">Spirit Owner</h3>
+                    <div class="pl-3 max-w-3xl text-xl">
                         <p>Designed a mobile/desktop app for weighing station owners and staff not directly involved with operating the weighbridges. The app was designed to give owners and management staff access to weighing logs of all their weighbridges, provide notifications for any weighbridge hardware or software issues, and alert them about fraud attempts.</p>
                     </div>
                 </div>
@@ -218,8 +224,8 @@
                 <img class="mb-20 max-sm:rounded-lg rounded-xl outline-1 outline-brain-grey-100 aspect-video" src="/assets/img/prj/usc/driver/usc-spirit-driver-000-cover.webp" alt="USC Spirit Driver cover image">
 
                 <div class="pb-24 sm:px-2 flex flex-col md:flex-row md:gap-16 align-baseline">
-                    <h3 class="text-xl leading-snug md:leading-tight mb-2 font-semibold">Spirit Driver</h3>
-                    <div class="pl-3 max-w-3xl">
+                    <h3 class="text-2xl leading-snug md:leading-tight mb-2 font-semibold">Spirit Driver</h3>
+                    <div class="pl-3 max-w-3xl text-xl">
                         <p class="mb-6">The Driver mobile app was a third piece of the ecosystem aimed at drivers of heavy goods vehicles.</p>
                         <p>The designs below are for the 1.0 version of the app. The focus was limited to the following three areas: help drivers find Spirit-enabled weighing stations, speed up their weighing process, and provide access to their digitally signed weighing records.</p>
                     </div>
@@ -260,20 +266,11 @@
 
     </main>
 
-    <div class="flex items-center gap-2 mb-24 sm:mb-40">
-        <a href="/">
-            <div class="inline-flex items-center rounded-lg gap-2 pt-2 pr-6 pb-2 pl-4 bg-brain-grey-100 hover:bg-orange-500 text-shadow-brain-grey-900 hover:text-white font-medium text-lg">
-                <svg class="rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0, -1)"><path d="M12 6L18 12L12 18" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><path d="M17 12L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></g></svg>
-                <p>Back to homepage</p>
-            </div>
-        </a>
-    </div>
-
-    <footer id="footer" class="pass-id pt-12 pb-16 w-full sm:px-3">
-        <div class="mb-12">
+    <footer id="footer" class="pass-id pt-12 pb-16 w-full px-4 sm:px-6 text-lg sm:text-sm">
+        <div class="mb-12 show-view">
             <p class="font-semibold">Alex Hladkyi</p>
             <p class="mb-5 opacity-50">Product Designer / UX + UI + Interaction</p>
-            <p><span class="opacity-50">Based in Lviv, Ukraine</span><img class="inline flag" src="/assets/icons/icon-ua.svg"></p>
+            <p><span class="opacity-50">Based in Lviv, Ukraine</span><img class="inline flag max-sm:scale-125" src="/assets/icons/icon-ua.svg"></p>
             <p id="ah-time" class="mb-5 opacity-50"></p>
             <div class="mb-5"><a class="alink" href="mailto:mail@alexhladkyi.com">mail@alexhladkyi.com</a></div>
             <div class="flex flex-wrap gap-3 mb-5">
@@ -281,10 +278,10 @@
                 <a class="alink" href="https://wa.me/message/VFDWAVS2SCIDJ1">WhatsApp</a>
                 <a class="alink" href="http://t.me/Balsalmo">Telegram</a>
             </div>
-            <p><img class="inline pdficon" src="/assets/icons/icon-pdf.svg"><a class="alink" href="/pdf/alexhladkyi_resume.pdf">Resume</a></p>
+            <p><img class="inline pdficon max-sm:scale-125" src="/assets/icons/icon-pdf.svg"><a class="alink" href="/pdf/alexhladkyi_resume.pdf">Resume</a></p>
         </div>
         <div class="pt-12 pb-16">
-            <p>© 2026</p>
+            <p>© 2013 … 2026</p>
         </div>
     </footer>
 

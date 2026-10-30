@@ -1,15 +1,20 @@
+//v2
+
 (function () {
   var TIME_ZONE = "Europe/Kyiv"; // IANA
   var SHOW_SECONDS = false;
 
-  var el = document.getElementById("ah-time");
-  if (!el) return;
+  // ID or class lookup
+  var targets = document.querySelectorAll(".ah-time, #ah-time");
+  if (!targets.length) return;
 
-  // Hide if browser doesn't know the time zone
+  // Hide all if browser doesn't know the time zone
   try {
     new Intl.DateTimeFormat("en-US", { timeZone: TIME_ZONE });
   } catch (e) {
-    (el.closest("p") || el).style.display = "none";
+    Array.prototype.forEach.call(targets, function (el) {
+      (el.closest("p") || el).style.display = "none";
+    });
     return;
   }
 
@@ -33,11 +38,8 @@
     hourCycle: "h23"
   });
 
-  el.style.fontVariantNumeric = "tabular-nums";
-
-  var colons = [];
-  function makeColon() {
-    // "0:0" colon alignment 
+  function makeColon(colons) {
+    // "0:0" colon alignment
     var c = document.createElement("span");
     c.textContent = "0:0";
     c.style.margin = "0 -1ch";
@@ -48,16 +50,26 @@
     return c;
   }
 
-  // Build: hour : minute [: second] [ AM/PM] (UTC±x)
-  var hourNode = document.createTextNode("");
-  var minNode = document.createTextNode("");
-  var secNode = document.createTextNode("");
-  var periodNode = document.createTextNode("");
-  var shiftNode = document.createTextNode("");
-  el.textContent = "";
-  el.append(hourNode, makeColon(), minNode);
-  if (SHOW_SECONDS) el.append(makeColon(), secNode);
-  el.append(periodNode, shiftNode);
+  // Build one instance per element:
+  // hour : minute [: second] [ AM/PM] (UTC±x)
+  var instances = Array.prototype.map.call(targets, function (el) {
+    var colons = [];
+    var inst = {
+      colons: colons,
+      hourNode: document.createTextNode(""),
+      minNode: document.createTextNode(""),
+      secNode: document.createTextNode(""),
+      periodNode: document.createTextNode(""),
+      shiftNode: document.createTextNode("")
+    };
+
+    el.style.fontVariantNumeric = "tabular-nums";
+    el.textContent = "";
+    el.append(inst.hourNode, makeColon(colons), inst.minNode);
+    if (SHOW_SECONDS) el.append(makeColon(colons), inst.secNode);
+    el.append(inst.periodNode, inst.shiftNode);
+    return inst;
+  });
 
   function utcLabel(now) {
     var p = {};
@@ -72,18 +84,26 @@
 
   function tick() {
     var now = new Date();
-    var period = "";
+
+    // Format once, share across all instances
+    var hour = "", minute = "", second = "", period = "";
     timeFmt.formatToParts(now).forEach(function (x) {
-      if (x.type === "hour") hourNode.nodeValue = x.value;
-      else if (x.type === "minute") minNode.nodeValue = x.value;
-      else if (x.type === "second") secNode.nodeValue = x.value;
+      if (x.type === "hour") hour = x.value;
+      else if (x.type === "minute") minute = x.value;
+      else if (x.type === "second") second = x.value;
       else if (x.type === "dayPeriod") period = " " + x.value;
     });
-    periodNode.nodeValue = period;
-    shiftNode.nodeValue = utcLabel(now);
-    // Colon blink
-    var vis = now.getSeconds() % 2 === 0 ? "visible" : "hidden";
-    colons.forEach(function (c) { c.style.visibility = vis; });
+    var shift = utcLabel(now);
+    var vis = now.getSeconds() % 2 === 0 ? "visible" : "hidden"; // colon blink
+
+    instances.forEach(function (inst) {
+      inst.hourNode.nodeValue = hour;
+      inst.minNode.nodeValue = minute;
+      inst.secNode.nodeValue = second;
+      inst.periodNode.nodeValue = period;
+      inst.shiftNode.nodeValue = shift;
+      inst.colons.forEach(function (c) { c.style.visibility = vis; });
+    });
   }
 
   tick();
