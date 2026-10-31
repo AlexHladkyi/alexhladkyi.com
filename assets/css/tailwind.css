@@ -357,9 +357,6 @@
   .aspect-240\/125 {
     aspect-ratio: 240/125;
   }
-  .aspect-480\/336 {
-    aspect-ratio: 480/336;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -627,6 +624,9 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\/assets\/img\/prj\/aod\/aod-000\.webp\)\] {
+    background-image: url(/assets/img/prj/aod/aod-000.webp);
+  }
   .bg-\[url\(\/assets\/img\/prj\/appsuite\/appsuite-000-1\.webp\)\] {
     background-image: url(/assets/img/prj/appsuite/appsuite-000-1.webp);
   }
@@ -876,9 +876,6 @@
   .opacity-70 {
     opacity: 70%;
   }
-  .opacity-80 {
-    opacity: 80%;
-  }
   .opacity-90 {
     opacity: 90%;
   }
@@ -1037,9 +1034,6 @@
   @media (width >= 40rem) {
     .sm\:mx-2 {
       margin-inline: calc(var(--spacing) * 2);
-    }
-    .sm\:mb-40 {
-      margin-bottom: calc(var(--spacing) * 40);
     }
     .sm\:hidden {
       display: none;

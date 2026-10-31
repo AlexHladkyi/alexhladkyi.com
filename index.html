@@ -78,7 +78,7 @@
             </div>
             <div class="max-sm:hidden flex flex-col items-end justify-center text-sm leading-none">
                 <p><span class="opacity-50">Lviv, Ukraine</span><img class="inline flag" src="/assets/icons/icon-ua.svg"></p>
-                <p id="ah-time" class="opacity-50"></p>
+                <p id="ah-time" class="opacity-50"> </p>
             </div>
         </div>
 
@@ -169,8 +169,8 @@
                 </a>
             </div>
 
-            <!-- 🟥Spiral -->
-            <div id="spiral-tmp" class="pass-id col-span-full hidden">
+            <!-- 🟢Spiral -->
+            <div id="spiral" class="pass-id col-span-full">
                 <a href="/work/spiral.html">
                     <figure class="p-2 rounded-2xl hover:bg-white hover:shadow-md/20 transition duration-100 group">
 
@@ -178,7 +178,7 @@
 
                         <div class="show-view flex flex-col gap-2 pt-3 pb-2 sm:px-2">
 
-                            <p class="max-w-3xl text-xl sm:text-2xl font-normal sm:font-light leading-snug max-sm:hyphens-auto">… .</p>
+                            <p class="max-w-3xl text-xl sm:text-2xl font-normal sm:font-light leading-snug max-sm:hyphens-auto">Designed a mobile app for Spiral, a Basecamp-inspired task manager tailored for event organizers and on-site production teams.</p>
                             <figcaption class="text-blue-500 group-hover:text-orange-500 text-base font-semibold">Spiral Task Manager mobile app<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline"><path d="M5 2L11 8L5 14" stroke-width="1.75" stroke="currentColor"/></svg></figcaption>
 
                         </div>
@@ -187,7 +187,23 @@
                 </a>
             </div>
 
+            <!-- 🟥AOD -->
+            <div id="aod-tmp" class="pass-id col-span-full hidden">
+                <a href="/drafts/attorneys-on-demand.html">
+                    <figure class="p-2 rounded-2xl hover:bg-white hover:shadow-md/20 transition duration-100 group">
 
+                        <div class="max-sm:rounded-lg rounded-xl outline-1 outline-brain-grey-100 aspect-video bg-[url(/assets/img/prj/aod/aod-000.webp)] bg-cover bg-center"></div>
+
+                        <div class="show-view flex flex-col gap-2 pt-3 pb-2 sm:px-2">
+
+                            <p class="max-w-3xl text-xl sm:text-2xl font-normal sm:font-light leading-snug max-sm:hyphens-auto">Designed a mobile app for Spiral, a Basecamp-inspired task manager tailored for event organizers and on-site production teams.</p>
+                            <figcaption class="text-blue-500 group-hover:text-orange-500 text-base font-semibold">Attorneys on Demand mobile app<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline"><path d="M5 2L11 8L5 14" stroke-width="1.75" stroke="currentColor"/></svg></figcaption>
+
+                        </div>
+
+                    </figure>
+                </a>
+            </div>
 
         </section>
 
@@ -205,13 +221,6 @@
 
                 <!-- Other projects list -->
                 <div id="project-list" class="-space-y-px grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-3 gap-y-4">
-
-                    <a href="#spiral" class="project-row cursor-zoom-in block hover:bg-brain-grey-100 rounded-xl">
-                        <div class="p-1">
-                            <div class="max-sm:rounded-md rounded-lg outline-1 outline-brain-grey-100 aspect-video bg-cover bg-center" style="background-image: url('/assets/img/prj/spiral/spiral-000.jpg')"></div>
-                            <h3 class="font-semibold text-lg pt-2 pl-2 truncate">Spiral Task Manager</h3>
-                        </div>
-                    </a>
 
                     <div class="project-row hidden">
                         <div class="cursor-default p-1">
@@ -286,66 +295,6 @@
                 </div>
 
                 <!-- Other project details overlays -->
-
-                <!-- 🟢Spiral -->
-                <div id="spiral" class="pass-id project-overlay fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden target:flex items-center justify-center text-white">
-
-                    <!-- Background click to close -->
-                    <a href="#_" class="fixed inset-0" aria-label="Close overlay"></a>
-
-                    <!-- Close overlay btn -->
-                    <a href="#_" class="fixed top-6 right-6 z-20 size-[44px] flex items-center justify-center rounded-[100px] bg-black/50 hover:bg-white/90 text-white hover:text-black text-3xl backdrop-blur-xl" aria-label="Close">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M256-192.35 192.35-256l224-224-224-224L256-767.65l224 224 224-224L767.65-704l-224 224 224 224L704-192.35l-224-224-224 224Z"/></svg>
-                    </a>
-
-                    <!-- Content Container -->
-                    <div class="relative w-full max-w-[1024px] max-h-screen overflow-y-auto p-6 sm:p-8 z-10">
-                        
-                        <div class="flex w-full h-16"></div>
-
-                        <!-- Header block -->
-                        <div class="flex items-center sm:items-start gap-4 pb-8 sm:px-2">
-
-                            <!-- Logo -->
-                            <div class="flex items-center justify-center">
-                                <div class="size-16">
-                                    <img src="/assets/img/prj/spiral/spiral-logo.webp" class="aspect-square">
-                                </div>
-                            </div>
-
-                            <!-- Client -->
-                            <div class="flex-auto flex-col items-start my-auto">
-                                <h3 class="font-semibold text-xl max-sm:tracking-snug">Spiral</h3>
-                            <p class="leading-snug sm:leading-normal sm:text-lg opacity-70">Task tracker for event organizers and coordinators</p>
-                            </div>
-
-                        </div>
-
-                        <!-- Main image -->
-                        <div class="pb-2">
-                            <img class="max-sm:rounded-lg rounded-xl aspect-video" decoding="async" src="/assets/img/prj/spiral/spiral-000.jpg">
-                        </div>
-
-                        <!-- Scndry images -->
-                        <div class="flex flex-col gap-2 pb-8">
-                            <div class="grid grid-cols-1 gap-2">
-                                <img class="object-contain max-sm:rounded-lg rounded-xl aspect-480/336" loading="lazy" decoding="async" src="/assets/img/prj/spiral/spiral-001.webp">
-                            </div>
-                        </div>
-
-                        <!-- Description -->
-                        <div class="flex gap-8 justify-between max-sm:flex-col-reverse sm:px-3 pb-8">
-                            <div class="basis-3/4">
-                                <p class="max-w-4xl text-lg pb-8 opacity-80">Designed the v1.0 mobile app for Spiral, a Basecamp-inspired task manager tailored for event organizers and on-site production teams. Serving as the sole UX/UI designer from discovery to interactive prototyping, I structured a multi-event dashboard that provides coordinators with a bird's-eye view of task progress and automated problem alerts. To streamline operations, I designed a decentralized communication system featuring contextual task-based chats and a cross-team request framework that empowers field staff to resolve issues directly without interrupting coordinators.</p>
-                            </div>
-                            <div class="basis-1/4 pt-1 text-base">
-                                <p class="h-lh opacity-40 text-xs sm:text-sm uppercase tracking-wide">Keywords</p>
-                                <p class="opacity-50">Mobile Product Design, Task Management & Collaboration, 0→1 Project, Operations & Logistics, Project Management App, Communication Tools, Cross-Team Workflows</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <!-- 🟢Attorneys on Demand -->
                 <div id="aod" class="pass-id project-overlay fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden target:flex items-center justify-center text-white">
