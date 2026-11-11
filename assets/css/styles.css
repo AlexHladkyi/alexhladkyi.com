@@ -63,10 +63,15 @@ body:has(.project-overlay:target) {
 
 .cube-reset {
   opacity: 0;
-  animation: cubeReset 300ms 150ms ease-out forwards;
+  animation: opacityTo1 300ms 150ms ease-out forwards;
 }
 
-@keyframes cubeReset {
+.reveal-scndr {
+  opacity: 0;
+  animation: opacityTo1 500ms 250ms ease-out forwards;
+}
+
+@keyframes opacityTo1 {
   from {
     opacity: 0;
   }
